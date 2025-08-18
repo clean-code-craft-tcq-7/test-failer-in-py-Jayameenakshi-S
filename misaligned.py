@@ -9,7 +9,7 @@ def get_color_map():
     return color_map
 
 def get_pair_number(majorIndex, minorIndex):
-    return majorIndex * 5 + minorIndex
+    return majorIndex * 5 + minorIndex + 1
 
 def print_color_map():
     color_map = get_color_map()
