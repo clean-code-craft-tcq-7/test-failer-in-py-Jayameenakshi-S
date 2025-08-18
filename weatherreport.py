@@ -40,10 +40,12 @@ def testHighPrecipitation():
     # to give high precipitation (>60) and low wind-speed (<50)
 
     weather = report(highPrecipitationSensorStub)
+    print(weather)
+    assert("rain" in weather)
 
     # strengthen the assert to expose the bug
     # (function returns Sunny day, it should predict rain)
-    assert(len(weather) > 0)
+    # assert(len(weather) > 0)
 
 
 if __name__ == '__main__':
