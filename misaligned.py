@@ -21,6 +21,7 @@ def print_color_map():
     for i in color_map:
         print(format_color_map_entry(i))
 
+print_color_map()
 
 result = get_color_map()
 assert(len(result) == 25)
